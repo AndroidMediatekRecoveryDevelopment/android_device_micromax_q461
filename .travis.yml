@@ -9,7 +9,7 @@ before_script:
 - cd $HOME
 - wget -q https://github.com/yshtemp/twrp/releases/download/untagged-58e9c768b6f98d360134/cm_twrp-5.1.1-20180208-repo.tar.xz
   -O $HOME/twrp.tar.xz
-- tar -xvf twrp.tar.xz &> log && ls
+- tar -xJf twrp.tar.xz --directory $HOME/twrp/
 script:
   - cd $HOME/twrp/
   - git clone https://github.com/TwrpBuilder/android_device_micromax_q461.git device/micromax/q461
