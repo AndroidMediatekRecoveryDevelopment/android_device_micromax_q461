@@ -11,7 +11,7 @@ before_script:
 - echo "export PATH=~/bin:$PATH" >> ~/.bashrc ; source ~/.bashrc
 - wget -q https://github.com/yshtemp/twrp/releases/download/untagged-58e9c768b6f98d360134/cm_twrp-5.1.1-20180208-repo.tar.xz
   -O $HOME/twrp.tar.xz
-- tar -xvJf twrp.tar.xz --directory $HOME/twrp/
+- tar -xJf twrp.tar.xz --directory $HOME/twrp/
 script:
   - cd $HOME/twrp/ && repo sync -l && rm -rf .repo
   - git clone https://github.com/TwrpBuilder/android_device_micromax_q461.git device/micromax/q461
