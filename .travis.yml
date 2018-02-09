@@ -6,7 +6,7 @@ services:
 before_install:
   - docker pull yshalsager/cyanogenmod:latest
 before_script:
-- cd $HOME
+- cd $HOME ; mkdir twrp
 - wget -q https://github.com/yshtemp/twrp/releases/download/untagged-58e9c768b6f98d360134/cm_twrp-5.1.1-20180208-repo.tar.xz
   -O $HOME/twrp.tar.xz
 - tar -xJf twrp.tar.xz --directory $HOME/twrp/
