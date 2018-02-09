@@ -7,7 +7,7 @@ before_install:
   - docker pull yshalsager/cyanogenmod:latest
 before_script:
 - cd $HOME && mkdir twrp
-- curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x
+- curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 - echo "export PATH=~/bin:$PATH" >> ~/.bashrc ; source ~/.bashrc
 - wget -q https://github.com/yshtemp/twrp/releases/download/untagged-58e9c768b6f98d360134/cm_twrp-5.1.1-20180208-repo.tar.xz
   -O $HOME/twrp.tar.xz
